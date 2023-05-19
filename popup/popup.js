@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         chrome.tabs.sendMessage(tabs[0].id, { message: "toggleBackground" });
       });
     });
-
+    
 //SENDS the info to the content js.
 //funcion funcionando y testeada con el html del test.
   document.getElementById("autofill").addEventListener("click", () => {
@@ -50,7 +50,7 @@ document.getElementById("load").addEventListener("click", () => {
           'birthdate'
   ], function (result) {
     document.getElementById('name').value = result.name
-    document.getElementById('apellido').value = result.apelido
+    document.getElementById('apellido').value = result.apellido
     document.getElementById('country').value = result.country
     document.getElementById('email').value = result.email
     document.getElementById('birthdate').value = result.birthdate
